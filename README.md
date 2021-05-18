@@ -1,13 +1,12 @@
-# techlabs
+# TechLabs Consultoria em Inovação
 
-## TechLabs Consultoria em Inovação
 
-### Objetivo
+## Objetivo
 
 Este projeto tem como objetivo ajudar empreendedores do ramo de alimentação
 
-### Time
+## Time
 
-* Beatriz Maria da Silva Pereira
-* Kaly Chung
-* Lucas 
+- Beatriz Maria da Silva Pereira
+- Kaly Chung
+- Lucas
