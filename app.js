@@ -1,5 +1,9 @@
 'use strict';
 
+//Acrescentar isso
+//var mysql = require('mysql');
+//var connection  = require('./lib/db');
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
@@ -27,13 +31,17 @@ app.get("/formulario", function(req, res){
 
 //Rota para o botão de enviar do formulário//
 app.post('/enviar_formulario', function(req, res){
-  res.render('/forms.html')
+  // Usar a variavel req para pegar as informações enviadas pelo formulário
+  // Montar o sql para inserir os dados no Mysql ... INSERT etc
+  // Montar o algoritmo de ifs para dar as respostas necessárias e guardar na variável output (javascript)
+  // 
+  res.render('/enviar_forms.html') 
 } )
 
 //Rota para o botão de enviar conectada com banco de dados
-app.post("/enviar_forms.html", function (req, res){
-  forms.create({//O QUE EU QUERO MOSTRAR//})
-  })
+//app.post("/enviar_forms.html", function (req, res){
+  //forms.create({//O QUE EU QUERO MOSTRAR//})
+  //})
 
 
 app.listen(PORT);
