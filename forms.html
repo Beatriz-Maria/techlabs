@@ -10,6 +10,7 @@
         initial-scale=1.0">
    <title>Gerenciando Restaurantes</title>
    <link href="style.css" rel="stylesheet">
+   <link href="enviar_forms.html" rel="">
 
 </head>
 
@@ -24,7 +25,8 @@
        
     <br>
     <div class="forms">
-      <forms action>
+      <!--Action é para qual rota vão os dados do furmulário após clicar no botão-->
+      <forms action="enviar_forms.html" method="POST"> 
          
          <div class="categorias">
          <h3>Perguntas sobre a gestão do seu negócio</h3>
@@ -170,7 +172,7 @@
 </main>   
 
 <div class="button-forms">
-   <form method="get" action="">
+   <form method="get" action="/enviar_forms.html">
    <button type="submit">Enviar</button>  
    </div>
 
