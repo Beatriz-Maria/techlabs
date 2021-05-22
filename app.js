@@ -26,7 +26,7 @@ app.get("/formulario", function(req, res){
 })
 
 //Rota para o botão de enviar do formulário//
-app.post('/enviar_forms.html', function(req, res){
+app.post('/enviar_formulario', function(req, res){
   res.render('/forms.html')
 } )
 
