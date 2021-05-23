@@ -14,5 +14,8 @@ create table input (
     PRIMARY KEY (form_id)
 ); 
 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ell5280p#M'
+flush privileges;
+
 
 -- drop database db;
