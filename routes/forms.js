@@ -12,31 +12,35 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Estou planejando e não abri o meu nogócio',
-                        value: '0'
+                        value: '0.25'
                     },
                     {
                         label: 'De 0 até 6 meses',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'Mais de 6 meses até 1 ano',
-                        value: '2'
+                        value: '0.75'
                     },
                     {
                         label: 'Mais de 1 ano até 1 ano e meio',
-                        value: '3'
+                        value: '0.9'
+                    },
+                    {
+                        label: 'Mais de 1 ano e meio até 2 anos',
+                        value: '1.0'
                     },
                     {
                         label: 'Mais de 2 anos até 5 anos',
-                        value: '4'
+                        value: '1.1'
                     },
                     {
                         label: 'Mais de 5 anos até 10 anos',
-                        value: '5'
+                        value: '1.2'
                     },
                     {
                         label: 'Mais de 10 anos',
-                        value: '6'
+                        value: '1.3'
                     }
                     
                 ]
@@ -49,23 +53,23 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Até 2 funcionários',
-                        value: '0'
+                        value: '0.25'
                     },
                     {
                         label: 'Até 5 funcionários',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'Até 8 funcionários',
-                        value: '2'
+                        value: '0.75'
                     },
                     {
                         label: 'Até 10 funcionários',
-                        value: '3'
+                        value: '1.0'
                     },
                     {
                         label: 'Mais de 10 funcionários',
-                        value: '4'
+                        value: '1.3'
                     }
                 ]
 
@@ -78,15 +82,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Grande, acima de 20 itens',
-                        value: '0'
+                        value: '0.5'
                     },
                     {
                         label: 'Médio, até 20 itens',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'Pequeno, até 10 itens',
-                        value: '2'
+                        value: '1.5'
                     }
                     
                 ]
@@ -100,28 +104,77 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Até 20 pessoas',
-                        value: '0'
+                        value: '0.25'
                     },
                     {
                         label: 'Entre 21 a 50 pessoas',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'Entre 51 a 80 pessoas',
-                        value: '2'
+                        value: '0.75'
                     },
                     {
                         label: 'Entre 81 a 120 pessoas',
-                        value: '3'
+                        value: '1.0'
                     },
                     {
                         label: 'Entre 121 a 200 pessoas',
-                        value: '4'
+                        value: '1.25'
                     },
                     {
                         label: 'Acima de 200 pessoas',
-                        value: '5'
+                        value: '1.25'
                     }
+                ]
+
+            },
+            {
+           
+                question: 'Sobra um dinheirinho para reinvestir no negócio?',
+                name: 'din_reinvestir',
+                options: [
+                    {
+                        label: 'Na maioria dos meses sim',
+                        value: '1.5'
+                    },
+                    {
+                        label: 'É difícil sobrar o suficiente para reinvestir, mas eu tento guardar',
+                        value: '0.5'
+                    },
+                    
+                ]
+
+            },
+            {
+           
+                question: 'Tem outras unidades e/ou pretende expandir?',
+                name: 'pretende_expandir',
+                options: [
+                    {
+                        label: 'Sim',
+                        value: '1.4'
+                    },
+                    {
+                        label: 'Não',
+                        value: '0.4'
+                    },
+                ]                    
+
+            },
+            {
+           
+                question: 'Possui as licenças necessárias para funcionar? (Vigilância sanitária, bombeiros, etc)',
+                name: 'licenca_necessaria',
+                options: [
+                    {
+                        label: 'Sim',
+                        value: '1.5'
+                    },
+                    {
+                        label: 'Não',
+                        value: '0.5'
+                    },                    
                 ]
 
             },
@@ -132,23 +185,23 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Eu não sei o que é ticket médio',
-                        value: '0'
+                        value: '0.2'
                     },
                     {
                         label: 'Eu sei o que é ticket médio, mas eu não faço essas contas.',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'Meu ticket médio é próximo do valor do meu item mais caro.',
-                        value: '2'
+                        value: '1'
                     },
                     {
                         label: 'Meu ticket médio é mais próximo do valor do meu item mais barato',
-                        value: '3'
+                        value: '1'
                     },
                     {
                         label: 'Meu ticket médio é mais próximo do valor do meu item mediano.',
-                        value: '4'
+                        value: '1.4'
                     },
                     
                 ]
@@ -160,23 +213,23 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Eu não sei o que é custo médio.',
-                        value: '0'
+                        value: '0.2'
                     },
                     {
                         label: 'Eu sei o que é custo médio mas eu não faço controle das contas.',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'O custo médio é próximo de 50% do meu item mais caro.',
-                        value: '2'
+                        value: '1.0'
                     },
                     {
                         label: 'O custo médio é próximo de 50% do meu item mais barato.',
-                        value: '3'
+                        value: '1.0'
                     },
                     {
                         label: 'O custo médio é próximo de 50% do meu item mediano.',
-                        value: '4'
+                        value: '1.4'
                     },
                     
                 ]
@@ -188,23 +241,23 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Eu não sei o que é margem de lucro?',
-                        value: '0'
+                        value: '0.2'
                     },
                     {
                         label: 'Eu sei o que é margem de lucro mas eu não faço controle das contas.',
-                        value: '1'
+                        value: '0.5'
                     },
                     {
                         label: 'A margem de lucro média é próximo de 20% do meu item mais caro.',
-                        value: '2'
+                        value: '1'
                     },
                     {
                         label: 'A margem de lucro média é próximo de 20% do meu item mais barato.',
-                        value: '3'
+                        value: '1'
                     },
                     {
                         label: 'A margem de lucro média é próximo de 20% do meu item mediano.',
-                        value: '4'
+                        value: '1.4'
                     },
                     
                 ]
@@ -216,25 +269,21 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, todo dia.',
-                        value: '0'
+                        value: '1.5'
                     },
                     {
                         label: 'Sim, na maioria das vezes.',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'Quase nunca.',
-                        value: '2'
+                        value: '0.75'
                     },
                     {
                         label: 'Não sei o que é fluxo de caixa.',
-                        value: '3'
+                        value: '0.25'
                     },
-                    {
-                        label: 'Meu ticket médio é mais próximo do valor do meu item mediano.',
-                        value: '4'
-                    },
-                    
+                                        
                 ]
             },
             {
@@ -244,15 +293,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, todo dia',
-                        value: '0'
+                        value: '1.4'
                     },
                     {
                         label: 'Sim, até 2 vezes por semana',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'Na maioria das vezes não, sempre tenho que correr atrás de alguma coisa na última hora.',
-                        value: '2'
+                        value: '0.4'
                     },
                                         
                 ]
@@ -264,11 +313,11 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim',
-                        value: '0'
+                        value: '1.5'
                     },
                     {
                         label: 'Não',
-                        value: '1'
+                        value: '0.5'
                     },
                                         
                 ]
@@ -280,11 +329,11 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim',
-                        value: '0'
+                        value: '1.4'
                     },
                     {
                         label: 'Não',
-                        value: '1'
+                        value: '0.4'
                     },
                                        
                 ]
@@ -296,19 +345,19 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Posto constantemente nas redes sociais',
-                        value: '0'
+                        value: '2.5'
                     },
                     {
                         label: 'Apareço nas redes sociais apenas em eventos/datas especiais ',
-                        value: '1'
+                        value: '2.0'
                     },
                     {
                         label: 'Uso bem pouco as redes sociais',
-                        value: '2'
+                        value: '1.5'
                     },
                     {
                         label: 'Não uso rede social para o meu negócio',
-                        value: '3'
+                        value: '0.5'
                     },
                                         
                 ]
@@ -320,15 +369,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Conheço e utilizo',
-                        value: '0'
+                        value: '1.25'
                     },
                     {
                         label: 'Conheço, mas não utilizo',
-                        value: '1'
+                        value: '0.75'
                     },
                     {
                         label: 'Não conheço',
-                        value: '2'
+                        value: '0.4'
                     },
                                         
                 ]
@@ -340,15 +389,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, minha identidade visual é bastante forte',
-                        value: '0'
+                        value: '1.25'
                     },
                     {
                         label: 'Sim, mas não sei trabalhar ela direito',
-                        value: '1'
+                        value: '0.75'
                     },
                     {
                         label: 'Não sei o que é identidade visual',
-                        value: '2'
+                        value: '0.4'
                     },
                                         
                 ]
@@ -360,15 +409,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Tenho meus diferenciais bem definidos',
-                        value: '0'
+                        value: '1.25'
                     },
                     {
                         label: 'Sei meus diferenciais, mas não trabalho focado nela',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'Não sei meus diferenciais',
-                        value: '2'
+                        value: '0.5'
                     }                    
                 ]
             },
@@ -379,11 +428,11 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, meu público-alvo é bem definido',
-                        value: '0'
+                        value: '2.5'
                     },
                     {
                         label: 'Não sei qual é meu público',
-                        value: '1'
+                        value: '0.5'
                     },
                                         
                 ]
@@ -395,15 +444,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, tenho isso bem definido',
-                        value: '0'
+                        value: '1.25'
                     },
                     {
                         label: 'Sim, tenho uma ideia geral',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'Não faço ideia',
-                        value: '2'
+                        value: '0.5'
                     }                   
                 ]
             },
@@ -414,11 +463,11 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim',
-                        value: '0'
+                        value: '2.0'
                     },
                     {
                         label: 'Não',
-                        value: '1'
+                        value: '0.5'
                     }                                        
                 ]
             },
@@ -429,23 +478,23 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'A grande maioria (mais de 75%) dos meus clientes voltam a comprar de mim.',
-                        value: '0'
+                        value: '2.0'
                     },
                     {
                         label: 'Uma quantidade razoável (de 50% a 75%) dos meus clientes voltam a comprar de mim.',
-                        value: '1'
+                        value: '1.5'
                     },
                     {
                         label: 'Poucos clientes (de 30% a 50%) voltam a comprar de mim.',
-                        value: '2'
+                        value: '1.0'
                     },
                     {
                         label: 'Muito pouco clientes (menos de 30%) voltam a comprar de mim',
-                        value: '3'
+                        value: '0.5'
                     },
                     {
                         label: 'Eu sei que tenho clientes que voltam mas não tenho noção da quantidade de clientes que voltam.',
-                        value: '4'
+                        value: '0.25'
                     },
                     
                 ]
@@ -456,20 +505,20 @@ router.get('/', function (req, res) {
                 name: 'motivo_volta_clientes',
                 options: [
                     {
-                        label: 'Não sei :(',
-                        value: '0'
+                        label: 'Não sei',
+                        value: '0.25'
                     },
                     {
                         label: 'A comida do meu estabelecimento.',
-                        value: '1'
+                        value: '1.0'
                     },
                     {
                         label: 'O ambiente do meu estabelecimento.',
-                        value: '2'
+                        value: '1.0'
                     },
                     {
                         label: 'Tanto a comida como o ambiente que eu ofereço no meu estabelecimento.',
-                        value: '3'
+                        value: '2.0'
                     }                    
                 ]
             },
@@ -480,31 +529,31 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) e muitos clientes preenchem.',
-                        value: '0'
+                        value: '2.0'
                     },
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) mas só poucos clientes preenchem.',
-                        value: '1'
+                        value: '1.75'
                     },
                     {
                         label: 'Na maioria das vezes eu vou passando pelos clientes e aproveito para perguntar se ele ficou satisfeito com a comida/serviço.',
-                        value: '2'
+                        value: '1.5'
                     },
                     {
                         label: 'Às vezes, quando eu lembro, vou passando pelos clientes e aproveito para perguntar se ele ficou satisfeito com a comida/serviço.',
-                        value: '3'
+                        value: '1.25'
                     },
                     {
                         label: 'Na maioria das vezes eu pergunto para o cliente se ele ficou satisfeito com a comida/serviço só na hora dele pagar.',
-                        value: '4'
+                        value: '1'
                     },
                     {
                         label: 'Às vezes, quando eu lembro, pergunto para o cliente se ele ficou satisfeito com a comida/serviço só na hora dele pagar.',
-                        value: '5'
+                        value: '0.75'
                     },
                     {
                         label: 'Não sei dizer.',
-                        value: '6'
+                        value: '0.25'
                     },
                     
                 ]
@@ -516,15 +565,15 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim, a maioria dos clientes.',
-                        value: '0'
+                        value: '2.0'
                     },
                     {
                         label: 'Só sei de alguns clientes',
-                        value: '1'
+                        value: '1.25'
                     },
                     {
                         label: 'Sei de bem poucos clientes.',
-                        value: '2'
+                        value: '0.75'
                     },
                                         
                 ]
