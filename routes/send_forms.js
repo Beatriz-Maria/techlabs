@@ -7,21 +7,37 @@ router.post('/', function (req, res) {
     // Usar a variavel req para pegar as informações enviadas pelo formulário
     req.assert('tempo_negocio', 'Answer is required').notEmpty()
     req.assert('num_funcionarios', 'Answer is required').notEmpty()
-    req.assert('entrega_app', 'Answer is required').notEmpty()
-    req.assert('num_volta_clientes', 'Answer is required').notEmpty()
+    req.assert('tam_cardapio', 'Answer is required').notEmpty()
+    req.assert('compra_semana', 'Answer is required').notEmpty()
     req.assert('ticket_medio', 'Answer is required').notEmpty()
     req.assert('custos_medios_mensais', 'Answer is required').notEmpty()
-    req.assert('lucro', 'Answer is required').notEmpty()
+    req.assert('margem_lucro', 'Answer is required').notEmpty()
+    req.assert('fluxo_caixa', 'Answer is required').notEmpty()
+    req.assert('controle_estoque', 'Answer is required').notEmpty()
+    req.assert('contabilidade_imposto', 'Answer is required').notEmpty()
+    req.assert('custos_variaveis', 'Answer is required').notEmpty()
+    req.assert('redes_sociais', 'Answer is required').notEmpty()
+    req.assert('publicidade', 'Answer is required').notEmpty()
+    req.assert('identidade_visual', 'Answer is required').notEmpty()
+    req.assert('diferencial_negocio', 'Answer is required').notEmpty()
+    req.assert('publico_alvo', 'Answer is required').notEmpty() 
+    req.assert('delivery', 'Answer is required').notEmpty()
+    req.assert('volta_clientes', 'Answer is required').notEmpty()
+    req.assert('num_volta_clientes', 'Answer is required').notEmpty()
+    req.assert('motivo_volta_clientes', 'Answer is required').notEmpty()
+    req.assert('nps', 'Answer is required').notEmpty()
+    req.assert('vem_clientes', 'Answer is required').notEmpty()
 
     let errors = req.validationErrors()
     if (errors) {
         throw 'Erro de validação'
     }
 
+    //req.body é para pegar o dado que veio do formulário
     let input = {
         tempo_negocio: req.body.tempo_negocio,
         num_funcionarios: req.body.num_funcionarios
-        date: new Date()
+        //date: new Date()//
     }
     connection.query(
         'INSERT INTO input SET ?',
