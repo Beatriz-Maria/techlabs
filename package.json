@@ -2,7 +2,7 @@
   "name": "consultoria",
   "version": "0.0.0",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "private": true,
   "dependencies": {
@@ -14,6 +14,7 @@
     "express-validator": "^5.3.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
   }
 }

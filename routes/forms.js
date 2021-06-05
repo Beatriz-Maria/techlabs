@@ -17,37 +17,37 @@ router.get('/', function (req, res) {
                     },
                     {
                         label: 'De 0 até 6 meses',
-                        value: '0.5'
+                        value: '0.5',
                         output: 'output_1_0.5'
                     },
                     {
                         label: 'Mais de 6 meses até 1 ano',
-                        value: '0.75'
+                        value: '0.75',
                         output: 'output_1_0.75'
                     },
                     {
                         label: 'Mais de 1 ano até 1 ano e meio',
-                        value: '0.9'
+                        value: '0.9',
                         output: 'output_1_0.9'
                     },
                     {
                         label: 'Mais de 1 ano e meio até 2 anos',
-                        value: '1.0'
+                        value: '1.0',
                         output: 'output_1_1.0'
                     },
                     {
                         label: 'Mais de 2 anos até 5 anos',
-                        value: '1.1'
+                        value: '1.1',
                         output: 'output_1_1.1'
                     },
                     {
                         label: 'Mais de 5 anos até 10 anos',
-                        value: '1.2'
+                        value: '1.2',
                         output: 'output_1_1.2'
                     },
                     {
                         label: 'Mais de 10 anos',
-                        value: '1.3'
+                        value: '1.3',
                         output: 'output_1_1.3'
                     }
                     
@@ -66,22 +66,22 @@ router.get('/', function (req, res) {
                     },
                     {
                         label: 'Até 5 funcionários',
-                        value: '0.5'
+                        value: '0.5',
                         output: 'output_2_0.5'
                     },
                     {
                         label: 'Até 8 funcionários',
-                        value: '0.75'
+                        value: '0.75',
                         output: 'output_2_0.75'
                     },
                     {
                         label: 'Até 10 funcionários',
-                        value: '1.0'
+                        value: '1.0',
                         output: 'output_2_1.0'
                     },
                     {
                         label: 'Mais de 10 funcionários',
-                        value: '1.3'
+                        value: '1.3',
                         output: 'output_2_1.3'
                     }
                 ]
@@ -95,17 +95,17 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Grande, acima de 20 itens',
-                        value: '0.5'
+                        value: '0.5',
                         output: 'output_3_0.5'
                     },
                     {
                         label: 'Médio, até 20 itens',
-                        value: '1.0'
+                        value: '1.0',
                         output: 'output_3_1.0'
                     },
                     {
                         label: 'Pequeno, até 10 itens',
-                        value: '1.5'
+                        value: '1.5',
                         output: 'output_3_1.5'
                     }
                     
@@ -120,32 +120,32 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Até 20 pessoas',
-                        value: '0.25'
+                        value: '0.25',
                         output: 'output_4_0.25'
                     },
                     {
                         label: 'Entre 21 a 50 pessoas',
-                        value: '0.5'
+                        value: '0.5',
                         output: 'output_4_0.5'
                     },
                     {
                         label: 'Entre 51 a 80 pessoas',
-                        value: '0.75'
+                        value: '0.75',
                         output: 'output_4_0.75'
                     },
                     {
                         label: 'Entre 81 a 120 pessoas',
-                        value: '1.0'
+                        value: '1.0',
                         output: 'output_4_1.0'
                     },
                     {
                         label: 'Entre 121 a 200 pessoas',
-                        value: '1.25'
+                        value: '1.25',
                         output: 'output_4_1.25'
                     },
                     {
                         label: 'Acima de 200 pessoas',
-                        value: '1.25'
+                        value: '1.25',
                         output: 'output_4_1.25'
                     }
                 ]
@@ -158,12 +158,12 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Na maioria dos meses sim',
-                        value: '1.5'
+                        value: '1.5',
                         output: 'output_5_1.5'
                     },
                     {
                         label: 'É difícil sobrar o suficiente para reinvestir, mas eu tento guardar',
-                        value: '0.5'
+                        value: '0.5',
                         output: 'output_5_0.5'
                     },
                     
@@ -177,12 +177,12 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Sim',
-                        value: '1.4'
+                        value: '1.4',
                         output: 'output_6_1.4'
                     },
                     {
                         label: 'Não',
-                        value: '0.4'
+                        value: '0.4',
                         output: 'output_6_0.4'
                     },
                 ]                    
@@ -612,17 +612,17 @@ router.get('/', function (req, res) {
                 options: [
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) e muitos clientes preenchem.',
-                        value: '2.0'
+                        value: '2.0',
                         output: 'output_24_2.0',
                     },
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) mas só poucos clientes preenchem.',
-                        value: '1.75'
+                        value: '1.75',
                         output: 'output_24_1.75',
                     },
                     {
                         label: 'Na maioria das vezes eu vou passando pelos clientes e aproveito para perguntar se ele ficou satisfeito com a comida/serviço.',
-                        value: '1.5'
+                        value: '1.5',
                         output: 'output_24_1.5',
                     },
                     {
