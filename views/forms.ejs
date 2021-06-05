@@ -25,22 +25,44 @@
                 </div>
 
                 <br>
-                <!-- Substituir os blocos de perguntas abaixo pela lista de perguntas definidas em routes/forms.js -->
+                <!-- Adicionar Atributo data e output para acessar via JQuery-->
                 <% for(let i=0; i < questions.length; i++) {%>
                 <div class="pergunta">
                     <!--Tempo de negócio-->
                     <label for="<%= questions[i].name %>"><strong><%= questions[i].question %></strong></label>
                     <div class="resposta">
                     <% for(let j=0; j < questions[i].options.length; j++) {%>
-                        <input type="radio" name="<%= questions[0].name %>" value="<%= questions[0].options[0].value %>" required><%= questions[i].options[j].label %><br>
+                        <input type="radio" name="<%= questions[0].name %>" value="<%= questions[i].options[j].value %>" data-feedback="<%= questions[i].options[j].output %>" required><%= questions[i].options[j].label %><br>
                     <% } %>
                     </div>
                 </div>
                 <% } %>
                 <br>
-                                       
+
+                                                      
                 <button type="submit">Enviar</button>
             </form>
-        </div>
+    </div>
+
+    <p id="answer-output"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+
+    <script>
+    
+    // Attach an event for when the user submits the form
+        $('form').on('submit', function(event) {
+           
+            // Prevent the page from reloading
+            event.preventDefault();
+           
+            //Esperando a Kally 
+        });
+    
+    
+    
+    
+    </script>
+        
     </main>
 </div>
