@@ -17,3 +17,5 @@ router.post('/', function (req, res) {
         throw 'Erro de validação'
     }
 })
+
+module.exports = router;

@@ -3,7 +3,7 @@ const router = express.Router();
 const connection = require('../db');
 
 /* POST enviar_formulario page. */
-router.post('/', function (req, res) {
+router.get('/', function (req, res) {
     // Usar a variavel req para pegar as informações enviadas pelo formulário
     req.assert('tempo_negocio', 'Answer is required').notEmpty()
     req.assert('num_funcionarios', 'Answer is required').notEmpty()
@@ -18,3 +18,5 @@ router.post('/', function (req, res) {
         throw 'Erro de validação'
     }
 })
+
+module.exports = router;
