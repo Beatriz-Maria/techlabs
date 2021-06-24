@@ -26,6 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', require('./routes/index'));
 app.use('/formulario', require('./routes/forms'));
 app.use('/enviar_formulario', require('./routes/send_forms'))
+//app.use('/forms_finance', require('./routes/send_forms_finance'))
+//app.use('/forms_management', require('./routes/send_forms_management'))
+//app.use('/forms_client', require('./routes/send_forms_client'))
+//app.use('/forms_marketing', require('./routes/send_forms_marketing'))
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
