@@ -2,8 +2,13 @@ const express = require('express');
 const router = express.Router();
 const connection = require('../db');
 
-/* POST enviar_formulario page. */
-router.get('/', function (req, res) {
+/* GET forms_management page. */
+router.get('/', function(req, res, next) {
+    res.render('forms_management', { title: 'forms_client' });
+});
+
+/* POST forms_management page. */
+router.post('/', function (req, res) {
     // Usar a variavel req para pegar as informações enviadas pelo formulário
     req.assert('tempo_negocio', 'Answer is required').notEmpty()
     req.assert('num_funcionarios', 'Answer is required').notEmpty()

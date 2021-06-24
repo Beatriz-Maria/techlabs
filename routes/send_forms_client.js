@@ -2,6 +2,11 @@ const express = require('express');
 const router = express.Router();
 const connection = require('../db');
 
+/* GET forms_client page. */
+router.get('/', function(req, res, next) {
+    res.render('forms_client', { title: 'forms_client' });
+});
+
 /* POST enviar_formulario page. */
 router.post('/', function (req, res) {
     req.assert('delivery', 'Answer is required').notEmpty()
