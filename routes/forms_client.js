@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET formulario page. */
+/* GET forms_client page. */
 router.get('/', function (req, res) {
     let data = {
-        title: 'OI Techies!',
+        title: 'forms_client',
         questions: [
             {
                 question: 'O restaurante realiza entrega via aplicativo delivery?',
@@ -146,7 +146,25 @@ router.get('/', function (req, res) {
             },
         ]
     }
-    res.render('forms', data);
+    res.render('forms_client', data);
+})
+
+/* POST enviar_formulario page. */
+router.post('/', function (req, res) {
+    req.assert('delivery', 'Answer is required').notEmpty()
+    req.assert('volta_clientes', 'Answer is required').notEmpty()
+    req.assert('motivo_volta_clientes', 'Answer is required').notEmpty()
+    req.assert('nps', 'Answer is required').notEmpty()
+    req.assert('vem_clientes', 'Answer is required').notEmpty()
+
+    // let errors = req.validationErrors()
+    // if (errors) {
+    //     throw 'Erro de validação'
+    // }
+    let data = {
+        title: 'Deu certo',
+    }
+    res.render('forms_client', data);
 })
 
 module.exports = router;

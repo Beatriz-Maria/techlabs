@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET formulario page. */
+/* GET forms_management page. */
 router.get('/', function (req, res) {
     let data = {
-        title: 'OI Techies!',
+        title: 'forms_management',
         questions: [
             {
                 question: 'Há quanto tempo seu negócio existe',
@@ -199,7 +199,28 @@ router.get('/', function (req, res) {
             },
         ]
     }
-    res.render('forms', data);
+    res.render('forms_management', data);
+})
+
+/* POST forms_management page. */
+router.post('/', function (req, res) {
+    // Usar a variavel req para pegar as informações enviadas pelo formulário
+    req.assert('tempo_negocio', 'Answer is required').notEmpty()
+    req.assert('num_funcionarios', 'Answer is required').notEmpty()
+    req.assert('tam_cardapio', 'Answer is required').notEmpty()
+    req.assert('compra_semana', 'Answer is required').notEmpty()
+    req.assert('din_reinvestir', 'Answer is required').notEmpty()
+    req.assert('pretende_expandir', 'Answer is required').notEmpty()
+    req.assert('licenca_necessaria', 'Answer is required').notEmpty()
+
+    // let errors = req.validationErrors()
+    // if (errors) {
+    //     throw 'Erro de validação'
+    // }
+    let data = {
+        title: 'Deu certo',
+    }
+    res.render('forms_management', data);
 })
 
 module.exports = router;
