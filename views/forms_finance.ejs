@@ -55,14 +55,18 @@
                 
             </form>
             
+            <div class='output'>
             <p id="answer-output"></p>
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-            </script>
-
-            <script> 
         
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+            
+            <section>
+            
+            <script> 
+                           
+                      
                 // Attach an event for when the user submits the form
                 $('form').on('submit', function(event) {
                 
@@ -84,11 +88,14 @@
 
                     $('#answer-output').text(output + " ... Valew Braseeelll!");
                 });
-
+               
+            
             </script>
-
+            </div>
         </div> 
     </main>
+
+    
 </div>
 
 <% include ./footer %>

@@ -160,7 +160,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url("/imagens/mesa2.png") 75% 0 repeat-y fixed;
+  background: url("/imagens/") 75% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
