@@ -83,10 +83,16 @@
                         $input = $("input[name=<%= questions[i].name %>]:checked");
                         inputVal = $input.val();
                         inputFeedback = $input.data('feedback');
-                        output = output + "\n" + inputFeedback + "..." + inputVal;
-                    <% } %> 
+                        output = output + "\n" + inputFeedback + "\n";
+                    <% } %>
+                    output = output + "\n... Valew Braseeelll!"
 
-                    $('#answer-output').text(output + " ... Valew Braseeelll!");
+                    //$('#answer-output').html(output.replace("\n", "<br>"));
+                    $('#answer-output').text(output);
+
+
+
+                    //$('#dialog').html(text.replace("\n", "<br>"));
                 });
                
             
