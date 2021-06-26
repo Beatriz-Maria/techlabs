@@ -1,6 +1,7 @@
 <% include ./header %>
 
 <!-- FINANCE SECTION -->
+<!--
 <section id="finance" class="parallax-section">
     <div class="container">
         <div class="row">
@@ -21,5 +22,81 @@
         </div>
     </div>
 </section>
+//-->
+
+<div class="pagina-forms">
+    <main>
+        <br>
+        <div class="forms">
+            <!--Action é para qual rota vão os dados do furmulário após clicar no botão-->
+            <!-- <form action="/enviar_formulario" method="POST"> -->
+            <form>
+                <div class="categorias">
+                    <h3>Perguntas sobre as finanças do seu negócio</h3>
+                </div>
+
+                <br>
+                <!-- Adicionar Atributo data e output para acessar via JQuery-->
+                <% for(let i=0; i < questions.length; i++) {%>
+                    <div class="pergunta">
+                        <!--Tempo de negócio-->
+                        <label for="<%= questions[i].name %>"><strong><%= questions[i].question %></strong></label>
+                        <div class="resposta">
+                        <% for(let j=0; j < questions[i].options.length; j++) {%>
+                            <input type="radio" name="<%= questions[i].name %>" value="<%= questions[i].options[j].value %>" data-value="<%= questions[i].options[j].value %>" data-feedback="<%= questions[i].options[j].output %>" required><%= questions[i].options[j].label %><br>
+                        <% } %>
+                        </div>
+                    </div>
+                    <% } %>
+                <br>
+
+                                                       
+                <button type="submit">Enviar</button>
+                
+            </form>
+            
+            <p id="answer-output"></p>
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+            </script>
+
+            <script> 
+        
+                // Attach an event for when the user submits the form
+                $('form').on('submit', function(event) {
+                
+                    // Prevent the page from reloading
+                    event.preventDefault();
+                
+                    //Esperando a Kally
+                    var $input = $("input[name=<%= questions[0].name %>]:checked");
+                    var inputVal = $input.val();
+                    var inputFeedback = $input.data('feedback');
+                    var output = "";
+
+                    <% for(let i=0; i < questions.length; i++) {%>
+                        $input = $("input[name=<%= questions[i].name %>]:checked");
+                        inputVal = $input.val();
+                        inputFeedback = $input.data('feedback');
+                        output = output + "\n" + inputFeedback + "..." + inputVal;
+                    <% } %> 
+
+                    $('#answer-output').text(output + " ... Valew Braseeelll!");
+                });
+
+            </script>
+
+        </div> 
+    </main>
+</div>
 
 <% include ./footer %>
+
+
+
+
+<!-- Comments -->
+<!--
+
+//-->
