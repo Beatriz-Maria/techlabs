@@ -1,137 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
 body{    
     margin: 0px;
     
     
 }
 
-.pagina-inicial{
-    background-image: url(/imagens/cozinha2.png);
-    background-position: center;
-    background-size:auto;
-    margin:0px;
-}
-
 .pagina-forms{
     background-color: white;
 }
-
-.titulo-index{
-    background-color: rgb(226, 17, 17);
-    padding: 10px 20px 10px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color:white;
-    text-align: center;
-}
-
-.titulo-forms{
-    background-color: black;
-    color:greenyellow;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-}
-
-.descricao{
-    color: black;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    margin-top: 43px;
-    padding: 5px;
-    background-color: greenyellow;
-    margin-left: 190px;
-    margin-bottom: 50px;
-    background-position: center;
-    max-width: 900px;
-    border-radius: 30px;
-}
  
-.colunas{
-    margin-top: 5px;
-    text-align: center;
-    display: inline-flex;
-    flex: 50px;
-    flex-wrap: wrap;
-    margin-left: 130px;
-    background-position: center;
-    text-align: center;
-    justify-content: space-around;
-        
-}
-
-.coluna{
-    background-color:white;
-    align-items: center;
-    flex-direction:row;
-    padding: 20px;
-    max-width: 200px;
-    margin: 10px;
-    margin-top: 20px;
-    border-radius: 50px;
-    
-        }
-
-.itens{
-    color:rgb(226, 17, 17);
-}
-
 button{
-    display: inline-flexbox;
-    cursor: pointer;
-    padding:10px 20px 10px 20px;
-    margin-top: 87px;
-    margin-left: 600px;
-    background-color: greenyellow;
-    width: 100px;
-    border-radius: 15px;
-    border-color: greenyellow;
-    border-style: solid;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:black;
+    background: #f1e206;
+    border: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 18px 32px;
+    margin-top: 42px;
+    text-transform: uppercase;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    margin-left: 300px;
 }
 
-.button-forms{
-    display: flex;
-    background-color: greenyellow;
-    cursor: pointer;
-    padding:10px 20px 10px 20px;
-    border-radius: 15px;
-    border-color: greenyellow;
-    border-style: solid;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:black;
-    max-width: 10px;
-    
-
+.button-back{
+    margin-left: 50px;
 }
 
 .forms{
-    background-color: rgb(245, 241, 241);
+    background-color:white;
     margin-left: 290px;
     border-radius: 30px 30px 0px 0px;
     max-width: 700px;
     display: flex;
     flex-wrap:wrap
-    
        
 }
 
-.divisoria{
-    border-radius: 15px;
-    border-color: aqua;
-}
 
+/*Título dos forms nas diferentes categorias*/
 .categorias{
-    background-color: rgb(226, 17, 17);
+    background-color: #f1e206;
     max-width: 750px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-family: 'Poppins', sans-serif;;
     text-align: center;
     padding: 3px;
     border-radius: 30px 30px 0px 0px;
@@ -139,21 +54,20 @@ button{
 }
 
 .pergunta{
-    color:rgb(226, 17, 17);
-    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-family:'Poppins', sans-serif;
     text-align: left;
     
         }
 
 .resposta{
-    display:list-item;
     color:black;
     text-align:left;
 }
 
 #answer-output{
     color:black;
-    background: rgb(245, 241, 241);
+    background: white;
     text-align: center;
     padding: 50px;
     display: flex;   

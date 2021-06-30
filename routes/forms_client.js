@@ -63,22 +63,22 @@ router.get('/', function (req, res) {
                     {
                         label: 'Não sei',
                         value: '0.25',
-                        output: 'output_23_0.25'
+                        output: 'Temos um problema aqui! Se você não tem conhecimento sobre o motivo dos seus clientes não comprarem de você é necessário iniciar um mapeamento e questionários para entender o que seu cliente não gostou. Isso permite que você resolva os problemas e garanta clientes fidelizados e que voltam a comprar de você recorrentemente.'
                     },
                     {
                         label: 'A comida do meu estabelecimento.',
                         value: '1.0',
-                        output: 'output_23_1.0'
+                        output: 'Muito bem! Continue avaliando por quais outros motivos seus clientes voltam, e não se esqueça de melhorar nos outros quesitos como melhorar o ambiente do estabelecimento.'
                     },
                     {
                         label: 'O ambiente do meu estabelecimento.',
                         value: '1.0',
-                        output: 'output_23_1.0'
+                        output: 'Muito bem! Continue avaliando por quais outros motivos seus clientes voltam, e não se esqueça de melhorar nos outros quesitos como melhorar a comida e o cardápio do estabelecimento.'
                     },
                     {
                         label: 'Tanto a comida como o ambiente que eu ofereço no meu estabelecimento.',
                         value: '2.0',
-                        output: 'output_23_2.0'
+                        output: 'Parabéns! Você está indo muito bem! Continue mapeando o porquê dos seus clientes voltarem a comprar de você!'
                     }                    
                 ]
             },
@@ -89,37 +89,37 @@ router.get('/', function (req, res) {
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) e muitos clientes preenchem.',
                         value: '2.0',
-                        output: 'output_24_2.0',
+                        output: 'Muito bem! Você está no caminho certo, apenas se certifique de que aquilo que não for bem avaliado pelo cliente receberá atenção para ser aprimorado, como por exemplo o atendimento no restaurante caso haja alguma reclamação.',
                     },
                     {
                         label: 'Temos sim um formulário de pesquisa de satisfação (papel, tablet etc) mas só poucos clientes preenchem.',
                         value: '1.75',
-                        output: 'output_24_1.75',
+                        output: 'Que bom que vocês já têm um formulário! Agora, para que a pesquisa de satisfação funcione bem é necessário que uma boa parcela dos clientes respondam. Então, tente entregar a pesquisa em momentos como antes do pagamento, por exemplo, assim, você terá certeza de que seus clientes vão preencher o formulário.',
                     },
                     {
                         label: 'Na maioria das vezes eu vou passando pelos clientes e aproveito para perguntar se ele ficou satisfeito com a comida/serviço.',
                         value: '1.5',
-                        output: 'output_24_1.5',
+                        output: 'Essa prática de passar pelos clientes para perguntar sua satisfação é ótimo! No entanto, é importante ter bem documentado sobre quais são os pontos de satisfação que estão mais comprometidos e aqueles que estão bons, realizar estretégias para melhorar e acompanhar se houveram mudanças importantes. Por este motivo, lembre-se de documentar.',
                     },
                     {
                         label: 'Às vezes, quando eu lembro, vou passando pelos clientes e aproveito para perguntar se ele ficou satisfeito com a comida/serviço.',
                         value: '1.25',
-                        output: 'output_24_1.25'
+                        output: 'Essa prática de passar pelos clientes para perguntar sua satisfação é ótimo! No entanto, é importante realizar isso mais frequentemente e ter bem documentado sobre quais são os pontos de satisfação que estão mais comprometidos e aqueles que estão bons, realizar estretégias para melhorar e acompanhar se houveram mudanças importantes. Por este motivo, lembre-se de documentar.'
                     },
                     {
                         label: 'Na maioria das vezes eu pergunto para o cliente se ele ficou satisfeito com a comida/serviço só na hora dele pagar.',
                         value: '1',
-                        output: 'output_24_1.0'
+                        output: 'Essa prática de perguntar para os clientes sua satisfação no momento do pagamento é ótimo! No entanto, é importante realizar isso mais frequentemente e ter bem documentado sobre quais são os pontos de satisfação que estão mais comprometidos e aqueles que estão bons, realizar estretégias para melhorar e acompanhar se houveram mudanças importantes. Por este motivo, lembre-se de documentar.'
                     },
                     {
                         label: 'Às vezes, quando eu lembro, pergunto para o cliente se ele ficou satisfeito com a comida/serviço só na hora dele pagar.',
                         value: '0.75',
-                        output: 'output_24_0.75'
+                        output: 'Temos um problema aqui! Não ter a rotina de perguntar para os clientes sua satisfação no momento do pagamento pode prejudicar seu negócio! É importante realizar isso mais frequentemente e ter bem documentado sobre quais são os pontos de satisfação que estão mais comprometidos e aqueles que estão bons, realizar estretégias para melhorar e acompanhar se houveram mudanças importantes. Por este motivo, lembre-se de documentar. '
                     },
                     {
                         label: 'Não sei dizer.',
                         value: '0.25',
-                        output: 'output_24_0.25'
+                        output: 'Temos um problema aqui! Não acompanhar a satisfação dos clientes irá prejudicar seu negócio! É importante realizar isso mais frequentemente e ter bem documentado sobre quais são os pontos de satisfação que estão mais comprometidos e aqueles que estão bons, realizar estretégias para melhorar e acompanhar se houveram mudanças importantes. Por este motivo, lembre-se de documentar.'
                     },
                     
                 ]
@@ -131,17 +131,17 @@ router.get('/', function (req, res) {
                     {
                         label: 'Sim, a maioria dos clientes.',
                         value: '2.0',
-                        output: 'output_25_2.0'
+                        output: 'Que ótimo, saber de onde vem seus clientes ajuda no seu negócio pois você entende de onde vêm seu maior volume de vendas, de qual aplicativo você consegue mais receita, e também bairros que mais atende.'
                     },
                     {
                         label: 'Só sei de alguns clientes',
                         value: '1.25',
-                        output: 'output_25_1.25'
+                        output: 'Temos um problem aqui! Saber de onde vem seus clientes ajuda no seu negócio pois você entende de onde vêm seu maior volume de vendas, de qual aplicativo você consegue mais receita, e também bairros que mais atende. Lembre-se de estar atento a essas informações pois ajudam na venda e marketing do seu restaurante'
                     },
                     {
                         label: 'Sei de bem poucos clientes.',
                         value: '0.75',
-                        output: 'output_25_0.75'
+                        output: 'Temos um problem aqui! Saber de onde vem seus clientes ajuda no seu negócio pois você entende de onde vêm seu maior volume de vendas, de qual aplicativo você consegue mais receita, e também bairros que mais atende. Lembre-se de estar atento a essas informações pois ajudam na venda e marketing do seu restaurante'
                     },
                                         
                 ]
