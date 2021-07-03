@@ -64,16 +64,6 @@ p {
   letter-spacing: 0.2px;
 }
 
-.bg-grey {
-  background: #383737 !important;
-}
-
-.white-color {
-  color: #f0f0f0;
-}
-
-
-
 /*---------------------------------------
   Buttons               
 -----------------------------------------*/
@@ -96,7 +86,7 @@ p {
 
 .section-btn:focus,
 .section-btn:hover {
-  background: #ffffff;
+  background: #070707;
   color: #000000;
 }
 
@@ -160,7 +150,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url("/imagens/") 75% 0 repeat-y fixed;
+  background: url("/imagens/mesa2.png") 75% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -195,7 +185,7 @@ a:hover, a:active, a:focus {
 
 /*Background das descrições*/
 .service-thumb:hover {
-  background: #574545;
+  background: #a2dd93;
   top: -5px;
 }
 
@@ -206,14 +196,6 @@ a:hover, a:active, a:focus {
 
 .service-thumb h4 {
   padding-bottom: 5px;
-}
-
-.service-thumb .fa {
-  color: #7682cc;
-  font-size: 62px;
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 22px;
 }
 
 .bg-grey .fa {
